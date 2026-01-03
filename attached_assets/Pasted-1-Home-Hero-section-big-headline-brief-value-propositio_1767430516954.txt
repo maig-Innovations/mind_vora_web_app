@@ -1,0 +1,169 @@
+1. Home
+
+Hero section (big headline + brief value proposition)
+
+Primary CTA buttons (Contact / Get Quote / Services)
+
+Brief intro about Mindvora (who you are, what you do)
+
+Quick summary of core services
+
+Testimonials / Client logos
+
+Featured case studies or success metrics
+
+Footer with nav links, social icons
+
+Goal: Give visitors a quick, memorable first impression and direct them to deeper pages. 
+b12.io
+
+2. About Us
+
+Company overview (mission, vision, values)
+
+Story & history
+
+Leadership / Founders team bios
+
+Awards & recognitions (if any)
+
+Culture / Why choose us
+
+Why: Helps build trust and credibility with potential clients & partners. 
+b12.io
+
+3. Services (Main section)
+
+This should be a top nav menu item with either a dropdown or separate dedicated pages for each major service:
+
+Example pages under Services:
+
+Web & Mobile App Development
+
+AI & Machine Learning Solutions
+
+Cloud Consulting & Infrastructure
+
+Business Process Automation
+
+UI/UX Design Services
+
+VR / AR / XR Experiences (if you offer immersive tech)
+
+Each service page:
+
+Description of what you do
+
+Benefits of the service
+
+Key technologies you use
+
+Case studies or examples
+
+Tip: Keep these pages simple but informative — clearly showing what problem each service solves. 
+Mindora Technologies
+
+4. Portfolio / Case Studies
+
+Highlight past projects
+
+Client names & industries
+
+Results achieved (metrics if possible)
+
+Screenshots or links
+
+Goal: Show real-world examples of your work to build trust & conversions. 
+b12.io
+
+5. Clients / Testimonials
+
+Success stories
+
+Client feedback quotes
+
+Logos of clients & partners
+
+Why: Helps new clients see that others trust your work. 
+b12.io
+
+6. Blog / Insights
+
+Industry articles
+
+Tech trends
+
+Company news
+
+Tutorials or thought-leadership content
+
+Benefits: Boosts SEO and positions your company as an authority in technology. 
+b12.io
+
+7. Careers (optional)
+
+Open positions
+
+Culture & perks
+
+How to apply
+
+This is useful if you want to attract talent. 
+b12.io
+
+8. Contact Us
+
+Should have:
+
+Contact form
+
+Email & phone
+
+Office address(es)
+
+Map or directions optional
+
+Social links
+
+Tip: Include CTA buttons on every page like Contact / Request a Proposal. 
+b12.io
+
+9. Legal Pages (important for trust & compliance)
+
+Privacy Policy
+
+Terms of Service
+
+Cookie Policy
+
+These may appear in the footer rather than main navigation. 
+b12.io
+
+📦 Website Navigation Menu Example
+Home | About Us | Services ▼ | Portfolio | Blog | Careers | Contact Us
+
+
+Under “Services” (dropdown):
+
+Web Development
+AI & Machine Learning
+Cloud Solutions
+Automation Solutions
+UI/UX Design
+VR/AR/XR Projects
+
+📌 Footer (on every page)
+
+Include:
+
+Quick links
+
+Contact info
+
+Social media icons
+
+Legal links (Privacy / Terms)
+
+Newsletter signup
+
+This helps with navigation + credibili
