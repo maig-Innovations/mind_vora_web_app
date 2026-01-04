@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Code, Brain, Cloud, Workflow } from "lucide-react";
 import { Link } from "wouter";
 import { motion } from "framer-motion";
+import heroBg from "@assets/image_1767506057704.png";
 
 export default function Home() {
   const fadeIn = {
@@ -20,11 +21,15 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative pt-20 pb-32 md:pt-32 md:pb-48 overflow-hidden bg-slate-900">
         <div className="absolute inset-0 z-0">
-          <div className="absolute top-0 right-0 -mr-40 -mt-40 w-[800px] h-[800px] rounded-full bg-primary/20 blur-[120px]" />
-          <div className="absolute bottom-0 left-0 -ml-40 -mb-40 w-[600px] h-[600px] rounded-full bg-accent/20 blur-[100px]" />
+          <img 
+            src={heroBg} 
+            alt="Hero Background" 
+            className="absolute inset-0 w-full h-full object-cover opacity-60"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-slate-900/50 via-slate-900/80 to-slate-900 z-10" />
         </div>
 
-        <div className="container-width relative z-10">
+        <div className="container-width relative z-20">
           <div className="max-w-3xl mx-auto text-center">
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
