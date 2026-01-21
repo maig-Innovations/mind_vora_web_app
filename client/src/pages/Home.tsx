@@ -20,25 +20,25 @@ export default function Home() {
       seoDescription="Mindvora Solutions delivers premium software development, AI integration, and cloud consulting for modern businesses."
     >
       {/* Hero Section */}
-      <section className="relative pt-20 pb-32 md:pt-32 md:pb-48 overflow-hidden bg-slate-900">
+      <section className="relative pt-20 pb-32 md:pt-40 md:pb-56 overflow-hidden bg-slate-900">
         <div className="absolute inset-0 z-0">
           <img 
             src={heroBg} 
             alt="Hero Background" 
-            className="w-full h-full object-cover opacity-60"
+            className="w-full h-full object-cover opacity-40 scale-105"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-slate-900/40 via-slate-900/60 to-slate-900" />
-          <div className="absolute top-0 right-0 -mr-40 -mt-40 w-[800px] h-[800px] rounded-full bg-primary/20 blur-[120px]" />
-          <div className="absolute bottom-0 left-0 -ml-40 -mb-40 w-[600px] h-[600px] rounded-full bg-accent/20 blur-[100px]" />
+          <div className="absolute inset-0 bg-gradient-to-b from-slate-950/80 via-slate-950/60 to-slate-950" />
+          <div className="absolute top-0 right-0 -mr-40 -mt-40 w-[800px] h-[800px] rounded-full bg-primary/10 blur-[120px]" />
+          <div className="absolute bottom-0 left-0 -ml-40 -mb-40 w-[600px] h-[600px] rounded-full bg-accent/10 blur-[100px]" />
         </div>
 
         <div className="container-width relative z-10">
-          <div className="max-w-3xl mx-auto text-center">
+          <div className="max-w-4xl mx-auto text-center">
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5 }}
-              className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1.5 text-sm font-medium text-white mb-8 border border-white/10 backdrop-blur-sm"
+              className="inline-flex items-center gap-2 rounded-full bg-white/5 px-4 py-1.5 text-xs font-medium text-white/80 mb-12 border border-white/10 backdrop-blur-md"
             >
               <span className="flex h-2 w-2 rounded-full bg-primary animate-pulse"></span>
               Accepting new enterprise projects
@@ -48,16 +48,16 @@ export default function Home() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="text-5xl md:text-7xl font-display font-bold text-white tracking-tight leading-[1.1] mb-8"
+              className="text-6xl md:text-8xl font-display font-bold text-white tracking-tight leading-[1.05] mb-10"
             >
-              Transforming Ideas into <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">Digital Reality</span>
+              Transforming Ideas into <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-blue-400 to-accent">Digital Reality</span>
             </motion.h1>
             
             <motion.p 
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-xl text-slate-300 mb-10 leading-relaxed max-w-2xl mx-auto"
+              className="text-lg md:text-xl text-slate-300 mb-12 leading-relaxed max-w-2xl mx-auto font-medium"
             >
               We are Mindvora. A premium technology partner building scalable web apps, AI solutions, and robust cloud infrastructure for forward-thinking companies.
             </motion.p>
@@ -66,15 +66,15 @@ export default function Home() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
-              className="flex flex-col sm:flex-row items-center justify-center gap-4"
+              className="flex flex-col sm:flex-row items-center justify-center gap-6"
             >
               <Link href="/contact">
-                <Button size="lg" className="h-14 px-8 text-lg rounded-full w-full sm:w-auto">
+                <Button size="lg" className="h-14 px-10 text-lg rounded-full w-full sm:w-auto font-bold shadow-2xl shadow-primary/20">
                   Start a Project <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </Link>
               <Link href="/services/development">
-                <Button variant="outline" size="lg" className="h-14 px-8 text-lg rounded-full w-full sm:w-auto bg-transparent border-slate-700 text-white hover:bg-white/10 hover:text-white">
+                <Button variant="outline" size="lg" className="h-14 px-10 text-lg rounded-full w-full sm:w-auto bg-white/5 border-white/20 text-white hover:bg-white/10 hover:text-white backdrop-blur-md font-bold">
                   Explore Services
                 </Button>
               </Link>
