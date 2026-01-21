@@ -1,10 +1,6 @@
 import { Layout } from "@/components/Layout";
 import { PageHeader } from "@/components/PageHeader";
-import { useForm } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { z } from "zod";
-import { insertContactSchema } from "@shared/schema";
-import { useContactForm } from "@/hooks/use-contact";
+import { useForm } from "@formspree/react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -12,23 +8,28 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "
 import { Mail, MapPin, Phone } from "lucide-react";
 
 export default function Contact() {
-  const contactMutation = useContactForm();
-  
-  const form = useForm<z.infer<typeof insertContactSchema>>({
-    resolver: zodResolver(insertContactSchema),
-    defaultValues: {
-      name: "",
-      email: "",
-      company: "",
-      message: "",
-    },
-  });
+  const [state, handleSubmit] = useForm("mnjjogeq");
 
-  const onSubmit = (data: z.infer<typeof insertContactSchema>) => {
-    contactMutation.mutate(data, {
-      onSuccess: () => form.reset()
-    });
-  };
+  if (state.succeeded) {
+    return (
+      <Layout 
+        seoTitle="Contact" 
+        seoDescription="Mindvora Solutions provides end-to-end software development, AI solutions, and business automation. Get in touch with our team..."
+      >
+        <PageHeader 
+          title="Get In Touch" 
+          description="Have a project in mind? We'd love to hear about it." 
+        />
+        <section className="section-padding">
+          <div className="container-width">
+            <div className="text-center">
+              <p className="text-xl">Thanks for your message! We'll get back to you soon.</p>
+            </div>
+          </div>
+        </section>
+      </Layout>
+    );
+  }
 
   return (
     <Layout 
@@ -58,7 +59,8 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-bold">Visit Us</h3>
-                    <p className="text-muted-foreground">123 Innovation Drive,<br/>Tech Valley, CA 94043</p>
+                    <p className="text-muted-foreground">
+                    5900 Balcones Drive STE 100,<br/>Austin TX, USA 78731</p>
                   </div>
                 </div>
 
@@ -68,7 +70,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-bold">Email Us</h3>
-                    <p className="text-muted-foreground">hello@mindvora.com</p>
+                    <p className="text-muted-foreground">info@mindvorasolution.com</p>
                   </div>
                 </div>
 
@@ -87,74 +89,34 @@ export default function Contact() {
             {/* Form */}
             <div className="bg-card p-8 rounded-2xl border border-border shadow-lg">
               <h2 className="text-2xl font-bold mb-6">Send a Message</h2>
-              <Form {...form}>
-                <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-                  <FormField
-                    control={form.control}
-                    name="name"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel>Name</FormLabel>
-                        <FormControl>
-                          <Input placeholder="John Doe" {...field} />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
-                  <FormField
-                    control={form.control}
-                    name="email"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel>Email</FormLabel>
-                        <FormControl>
-                          <Input placeholder="john@example.com" {...field} />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
-                  <FormField
-                    control={form.control}
-                    name="company"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel>Company (Optional)</FormLabel>
-                        <FormControl>
-                          <Input placeholder="Your Company Ltd" {...field} value={field.value || ''} />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
-                  <FormField
-                    control={form.control}
-                    name="message"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel>Message</FormLabel>
-                        <FormControl>
-                          <Textarea 
-                            placeholder="Tell us about your project..." 
-                            className="min-h-[120px]" 
-                            {...field} 
-                          />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
+            
+                <form onSubmit={handleSubmit} className="space-y-6">
+                  <div>
+                    <label htmlFor="name" className="block text-sm font-medium mb-2">Name</label>
+                    <Input id="name" type="text" name="name" placeholder="John Doe" />
+                    
+                  </div>
+                  <div>
+                    <label htmlFor="email" className="block text-sm font-medium mb-2">Email</label>
+                    <Input id="email" type="email" name="email" placeholder="john@example.com" />
+                  </div>
+                  <div>
+                    <label htmlFor="company" className="block text-sm font-medium mb-2">Company (Optional)</label>
+                    <Input id="company" type="text" name="company" placeholder="Your Company Ltd" />
+                  </div>
+                   <div>
+                    <label htmlFor="message" className="block text-sm font-medium mb-2">Message</label>
+                    <Textarea id="message" name="message" placeholder="Tell us about your project..." className="min-h-[120px]" />
+                  </div>
                   <Button 
                     type="submit" 
                     className="w-full" 
                     size="lg"
-                    disabled={contactMutation.isPending}
+                    disabled={state.submitting}
                   >
-                    {contactMutation.isPending ? "Sending..." : "Send Message"}
+                    {state.submitting ? "Sending..." : "Send Message"}
                   </Button>
                 </form>
-              </Form>
             </div>
 
           </div>

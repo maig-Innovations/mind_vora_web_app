@@ -25,3 +25,6 @@ export type InsertContact = z.infer<typeof insertContactSchema>;
 
 export type Subscriber = typeof subscribers.$inferSelect;
 export type InsertSubscriber = z.infer<typeof insertSubscriberSchema>;
+
+export type Lead = typeof contactSubmissions.$inferSelect;
+export type InsertLead = Omit<Lead, 'id' | 'createdAt'>;

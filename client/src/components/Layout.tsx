@@ -150,7 +150,7 @@ export function Layout({ children, seoTitle, seoDescription }: LayoutProps) {
               Transforming businesses through innovative technology solutions. We build the future, today.
             </p>
             <div className="flex gap-4 pt-2">
-              <a href="#" className="hover:text-white transition-colors"><Linkedin className="h-5 w-5" /></a>
+              <a href="https://www.linkedin.com/company/mindvora-solution" className="hover:text-white transition-colors"><Linkedin className="h-5 w-5" /></a>
               <a href="#" className="hover:text-white transition-colors"><Twitter className="h-5 w-5" /></a>
               <a href="#" className="hover:text-white transition-colors"><Facebook className="h-5 w-5" /></a>
             </div>
@@ -174,11 +174,12 @@ export function Layout({ children, seoTitle, seoDescription }: LayoutProps) {
             <ul className="space-y-4 text-sm">
               <li className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-primary shrink-0" />
-                <span>123 Innovation Drive,<br/>Tech Valley, CA 94043</span>
+                <span>Austin, Texas, USA
+                5900 Balcones Drive STE 100, <br/>Austin TX, USA 78731</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-primary shrink-0" />
-                <a href="mailto:hello@mindvora.com" className="hover:text-white">hello@mindvora.com</a>
+                <a href="mailto:info@mindvorasolution.com" className="hover:text-white">info@mindvorasolution.com</a>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-primary shrink-0" />

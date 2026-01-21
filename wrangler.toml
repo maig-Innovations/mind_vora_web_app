@@ -1,0 +1,7 @@
+name = "maig_vora_web_app"
+compatibility_date = "2024-07-01"
+pages_build_output_dir = "dist/public"
+[env.production]
+pages_build_output_dir = "dist/public"
+compatibility_flags = ["nodejs_compat"]
+# Do not force NODE_ENV here; Pages sets NODE_ENV during runtime.
