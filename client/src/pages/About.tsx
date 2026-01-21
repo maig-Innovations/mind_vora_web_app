@@ -2,6 +2,8 @@ import { Layout } from "@/components/Layout";
 import { PageHeader } from "@/components/PageHeader";
 import { motion } from "framer-motion";
 
+import collaborationImg from "@assets/AI_collaboration_in_a_tech_office_1767506920980.png";
+
 export default function About() {
   return (
     <Layout 
@@ -24,9 +26,8 @@ export default function About() {
                   To empower organizations with transformative technology that simplifies complexity, drives efficiency, and creates new opportunities for growth. We believe software should be an enabler, not a bottleneck.
                 </p>
               </div>
-              <div className="bg-slate-100 rounded-2xl h-64 overflow-hidden">
-                 {/* unspash: modern tech office team collaboration */}
-                <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800&q=80" alt="Team" className="w-full h-full object-cover" />
+              <div className="bg-slate-100 rounded-2xl h-64 overflow-hidden shadow-lg border border-border/50">
+                <img src={collaborationImg} alt="Mindvora Collaboration" className="w-full h-full object-cover" />
               </div>
             </div>
 

@@ -77,9 +77,9 @@ export function Layout({ children, seoTitle, seoDescription }: LayoutProps) {
                 Services <ChevronDown className="h-4 w-4" />
               </button>
               <div className="absolute top-full left-0 w-64 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0 z-50">
-                <div className="bg-card rounded-xl shadow-xl border border-border/50 overflow-hidden p-2">
+                <div className="bg-background/95 backdrop-blur-md rounded-xl shadow-2xl border border-border overflow-hidden p-2">
                   {services.map((service) => (
-                    <Link key={service.href} href={service.href} className="block px-4 py-3 text-sm text-foreground hover:bg-muted/50 rounded-lg transition-colors">
+                    <Link key={service.href} href={service.href} className="block px-4 py-3 text-sm font-medium text-foreground hover:bg-primary/10 hover:text-primary rounded-lg transition-colors">
                       {service.name}
                     </Link>
                   ))}
