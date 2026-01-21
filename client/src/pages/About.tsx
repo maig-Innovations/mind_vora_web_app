@@ -2,7 +2,7 @@ import { Layout } from "@/components/Layout";
 import { PageHeader } from "@/components/PageHeader";
 import { motion } from "framer-motion";
 
-import collaborationImg from "@assets/AI_collaboration_in_a_tech_office_1767506920980.png";
+import collaborationImg from "@assets/generated_images/modern_ai_technology_office_with_mindvora_branding..png";
 
 export default function About() {
   return (
@@ -27,7 +27,7 @@ export default function About() {
                 </p>
               </div>
               <div className="bg-slate-100 rounded-2xl h-64 overflow-hidden shadow-lg border border-border/50">
-                <img src={collaborationImg} alt="Mindvora Collaboration" className="w-full h-full object-cover" />
+                <img src={collaborationImg} alt="Mindvora Innovation Hub" className="w-full h-full object-cover" />
               </div>
             </div>
 
