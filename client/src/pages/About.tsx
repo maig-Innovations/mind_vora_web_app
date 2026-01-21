@@ -7,8 +7,8 @@ import collaborationImg from "@assets/generated_images/modern_ai_technology_offi
 export default function About() {
   return (
     <Layout 
-      seoTitle="About Us" 
-      seoDescription="Learn about Mindvora's mission, vision, and the expert team driving digital transformation."
+      seoTitle="About us" 
+      seoDescription="Mindvora Solutions is a trusted service partner, providing end-to-end technology and innovation solutions..."
     >
       <PageHeader 
         title="Who We Are" 

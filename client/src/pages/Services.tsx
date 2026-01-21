@@ -65,7 +65,7 @@ export default function Services() {
   return (
     <Layout 
       seoTitle={service.title} 
-      seoDescription={service.desc}
+      seoDescription={`End-to-End ${service.title} Expertise. Mindvora Solutions delivers tailored technology solutions...`}
     >
       <PageHeader 
         title={service.title} 

@@ -46,10 +46,10 @@ export function Layout({ children, seoTitle, seoDescription }: LayoutProps) {
   return (
     <div className="flex min-h-screen flex-col font-sans text-foreground">
       <Helmet>
-        <title>{seoTitle ? `${seoTitle} | Mindvora Solutions` : "Mindvora Solutions - Future Tech, Today"}</title>
+        <title>{seoTitle ? `${seoTitle} | Mindvora Solutions` : "Mindvora Solutions - Premium Technology Partner"}</title>
         <meta 
           name="description" 
-          content={seoDescription || "Mindvora Solutions transforms businesses with cutting-edge technology, AI, and cloud solutions."} 
+          content={seoDescription || "Mindvora Solutions provides end-to-end software development, AI solutions, cloud infrastructure, and business automation across key industries. We help organizations optimize service..."} 
         />
       </Helmet>
 

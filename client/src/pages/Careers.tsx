@@ -14,7 +14,7 @@ export default function Careers() {
   return (
     <Layout 
       seoTitle="Careers" 
-      seoDescription="Join the Mindvora team. Build the future of technology with us."
+      seoDescription="End-to-end business support. Mindvora Solutions delivers staffing and career opportunities for tech professionals..."
     >
       <PageHeader 
         title="Join Our Team" 

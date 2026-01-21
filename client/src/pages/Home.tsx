@@ -16,8 +16,8 @@ export default function Home() {
 
   return (
     <Layout 
-      seoTitle="Home" 
-      seoDescription="Mindvora Solutions delivers premium software development, AI integration, and cloud consulting for modern businesses."
+      seoTitle="Mindvora Solutions" 
+      seoDescription="Mindvora Solutions provides end-to-end software development, AI solutions, cloud infrastructure, and business automation across key industries. We help organizations optimize service..."
     >
       {/* Hero Section */}
       <section className="relative pt-20 pb-32 md:pt-40 md:pb-56 overflow-hidden bg-slate-900">

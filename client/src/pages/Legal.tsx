@@ -3,7 +3,10 @@ import { PageHeader } from "@/components/PageHeader";
 
 export default function Legal() {
   return (
-    <Layout seoTitle="Legal" seoDescription="Privacy Policy and Terms of Service">
+    <Layout 
+      seoTitle="Terms of Use" 
+      seoDescription="Mindvora Solutions provides end-to-end software development, AI solutions, and business automation. Read our terms and policies..."
+    >
       <PageHeader title="Privacy Policy" description="Last updated: October 2023" />
       <section className="section-padding">
         <div className="container-width max-w-3xl prose prose-slate">

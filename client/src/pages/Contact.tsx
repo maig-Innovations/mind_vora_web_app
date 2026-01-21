@@ -32,8 +32,8 @@ export default function Contact() {
 
   return (
     <Layout 
-      seoTitle="Contact Us" 
-      seoDescription="Get in touch with Mindvora Solutions. We're ready to start your next project."
+      seoTitle="Contact" 
+      seoDescription="Mindvora Solutions provides end-to-end software development, AI solutions, and business automation. Get in touch with our team..."
     >
       <PageHeader 
         title="Get In Touch" 
