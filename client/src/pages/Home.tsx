@@ -96,7 +96,7 @@ export default function Home() {
                 From startups to Fortune 500s, we've helped companies across the globe modernize their tech stack and automate complex workflows.
               </p>
               <Link href="/about">
-                <Button variant="link" className="p-0 text-primary font-semibold text-lg">
+                <Button variant="ghost" className="p-0 text-primary font-semibold text-lg hover:bg-transparent">
                   More about us &rarr;
                 </Button>
               </Link>
